@@ -1,3 +1,69 @@
-h1{
-    color:red;
+.task-input{
+    display: flex;
+    gap: 10px
+}
+#btn-add-task{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+}
+
+
+
+
+
+
+#input-div{
+    border: 1px solid black;
+    height: 20rem;
+    width: 50rem;
+    border-radius: 10px;
+    display: none;
+}
+.input-container{
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+}
+
+
+
+
+
+
+
+.input-form{
+    height: 100%;
+    width: 90%;
+}
+
+.input-title{
+    height:3rem;
+    width: 75%;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.input-date{
+    height:3rem;
+    width: 15.5%;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+.input-desc{
+    height:13rem;
+    width: 94%;
+    margin: 1rem;
+    margin-top: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    resize: none;
+}
+.input-btn{
+    height: 100%;
+    width: 10%;
+
 }

@@ -58,3 +58,14 @@ MAIN LOGIC
     - change time/wording
         1) 
 4) delete tasks (DELETE)
+
+
+[id, title, description, completion, difficulty, due_date, create_date]
+
+id = auto int
+title = varchar(50)
+desc = varchar(180)
+completion = int 
+difficulty = int
+due_date = date
+create_date = date
