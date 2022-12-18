@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="./vendors/jquery.js" type="text/javascript"></script>
-    <script src="./scripts/client.js" type="text/javascript"></script>
+    <script type="module" src="./scripts/date.mjs"></script>
+    <script src="./scripts/client.js" type="module"></script>
+
     <link rel="stylesheet" href="./styles/styles.css">
 
     <title>To Do App</title>
@@ -43,7 +46,47 @@
         </div>
 
 
+
+
+
+
         <div class="task-output">
+
+            <div id="task-display">
+
+                <div class="completed"><p class="completed-task">Completed</p></div>
+
+
+                <div id="task-container">
+                    <div class="word-display">
+                        <div class="title-display">
+                            <div class="diff-display"></div>
+                            <h1 class="task-title">Take Out The Dog</h1>
+                        </div>
+    
+                        <div class="task-description">
+                            <p class="description"> take out maddy and make sure she usings the bathroom once</p>
+                        </div>
+    
+                        <div class="task-dates">
+                            <h4 class="due"> - due - 10:30 AM - Wednesday</h4>
+                            <h4 class="create">- created - 7:30 - Wednesday</h4>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="task-btn">
+                        <button class="check">></button>
+                        <button class="delete">X</button>
+                        <button class="edit">?</button>
+                    </div>
+                </div>
+                
+
+            </div>
+
+
         </div>
     </div>
 </body>
