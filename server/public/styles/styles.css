@@ -7,9 +7,18 @@
     gap: 10px
 }
 #btn-add-task{
-    height: 3rem;
-    width: 3rem;
-    border-radius: 100%;
+    height: 2rem;
+    width: 2rem;
+
+    font-size: 25px;
+    color: Gray;
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+}
+#btn-add-task:hover{
+    background-color: #E8E8E8;
+    cursor: pointer;
 }
 
 
@@ -23,6 +32,8 @@
     width: 50rem;
     border-radius: 10px;
     display: none;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 .input-container{
 
@@ -74,14 +85,18 @@
 
 
 
-
+.task-output{
+    padding-left:2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 #task-display{
     border: 1px solid black;
     width: 50rem;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    gap: 0;
 
     position:relative;
     
@@ -90,7 +105,10 @@
     display: flex;
 
 }
-
+.blur{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
 .word-display{
     width: 90%;
     border-radius: 10px;

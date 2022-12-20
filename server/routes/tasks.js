@@ -36,13 +36,25 @@ router.post('/',(req,res)=>{
 
 //PUT
 router.put('/checked/:id', (req, res)=>{
-    const currID = req.params.id;                       
-    let queryText = `UPDATE tasks SET completion=1 WHERE id=$1;`;
-
-
+    const currID = req.params.id;
+    let queryText;
+    queryText = `UPDATE tasks SET completion=1 WHERE id=$1;`;
     pool.query(queryText, [currID])
     .then((response)=>{
-        res.send(response.rows);
+        res.sendStatus(200);
+    })
+    .catch((err)=>{
+        console.log('err with DB PUT request, ', err);
+        res.sendStatus(500);
+    })
+});
+router.put('/uncheck/:id', (req, res)=>{
+    const currID = req.params.id;
+    let queryText;
+    queryText = `UPDATE tasks SET completion=0 WHERE id=$1;`;
+    pool.query(queryText, [currID])
+    .then((response)=>{
+        res.sendStatus(200);
     })
     .catch((err)=>{
         console.log('err with DB PUT request, ', err);
